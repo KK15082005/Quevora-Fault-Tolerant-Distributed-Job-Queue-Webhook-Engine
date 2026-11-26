@@ -1,0 +1,16 @@
+{
+    "name": "quevora",
+    "version": "0.1.0",
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "db:check": "npm --workspace=@quevora/shared run db:check",
+        "typecheck": "npm --workspaces --if-present run typecheck"
+    },
+    "dependencies": {
+        "dotenv": "^18.0.10"
+    }
+}
